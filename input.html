@@ -1,0 +1,21 @@
+<HTML>
+<HEAD>
+</HEAD>
+<BODY>
+<ul id="wordList">
+</ul>
+<form>
+add a word <input type="text" name="newWord" id="userInput"><br>
+<button onclick="appendWord()">Add word to list</button>
+
+<script>
+function appendWord(){
+	var node = document.createElement("LI");
+	var textnode = document.createTextNode(document.getElementById("userInput").value);
+	node.appendChild(textnode);
+	document.getElementById("wordList").appendChild(node);
+	}
+</script>
+</form>
+</BODY>
+</HTML>

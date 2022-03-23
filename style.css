@@ -1,0 +1,255 @@
+body{
+	background-color: gray;
+	margin: 0px;
+	paddig: 0px;
+}
+
+p{
+	font-weight: bold;
+}
+
+.bordered{
+	background-color: white;
+	border-style: dotted;
+	width: 100px;
+	float: center;
+	margin: auto;
+}
+
+.bordered:hover{
+	box-shadow: 0px 0px 10px white;
+}
+
+div.body{
+	margin-left: 11%;
+}
+
+.call{
+	margin: 60px auto;
+	width: 200px;
+	height: 100px;
+	background: orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	border-radius: 50%;
+	text-decoration: none;
+	animation: signal 1s infinite;
+}
+
+.synth{
+	margin: 60px auto;
+	width: 200px;
+	height: 100px;
+	background: orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	border-radius: 50%;
+	text-decoration: none;
+}
+
+.synth:hover{
+		animation: signal 1s 1;
+}
+
+.synth2{
+	margin: 10px;
+	width: 100px;
+	height: 50px;
+	background: orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	border-radius: 10%;
+	text-decoration: none;
+	float: left;
+}
+
+.synth2:hover{
+		animation: signal 1s 1;
+}
+
+@keyframes signal{
+	0%{
+		box-shadow: 0 0 0 0 green;
+	}
+	
+	100%{
+		box-shadow: 0 0 0 30px rgba(0,0,0,0);
+	}
+}
+
+div.highlight{
+	background-color: green;
+	color: white;
+	padding: 30px;
+	text-align: center;
+}
+
+div.highlight:hover{
+	background-color: blue;
+}
+
+
+
+.focusable:hover{
+	background-color: lightblue;
+	float: right;
+}
+
+footer{
+	text-align: right;
+}
+
+a:link{
+	color: 	#11ee11;
+}
+
+a:visited{
+	color: #000000;
+}
+
+a:hover{
+	color: #3fcf33;
+}
+
+a:active{
+	color: #0000ff;
+}
+
+
+
+
+.animatedForever{
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: relative;
+	-webkit-animation: mymove 5s infinite;
+	animation: mymove 5s infinite;
+}
+
+@-webkit-keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 0px;}
+}
+
+@keyframes mymove {
+	0%   {top: 0px;}
+	25%  {top: 200px;}
+	75%  {top: 50px}
+	100% {top: 0px;}
+}
+
+.animatedOnce{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	float: right;
+	color: white;
+	position: relative;
+	-webkit-animation: moveOnce 5s;
+	animation: moveOnce 5s;
+}
+
+@-webkit-keyframes moveOnce {
+  0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 0px;}
+}
+
+@keyframes MoveOnce {
+	0%   {top: 0px;}
+	25%  {top: 200px;}
+	75%  {top: 50px}
+	100% {top: 0px;}
+}
+
+.animatedHorizontally{
+	width: 200px;
+	height: 50px;
+	background: gray;
+	float: center;
+	vertical-align: middle;
+	padding: 10px;
+	color: black;
+	position: relative;
+	-webkit-animation: moveHorizontally 5s infinite;
+	animation: moveHorizontally 5s infinite;
+}
+
+.animatedFlashing{
+	width: 100px;
+	height: 50px;
+	background: rgb(100,100,20);
+	float: right;
+	display:block;
+	vertical-align: middle;
+	padding: 10px;
+	color: white;
+	position: relative;
+	text-align: center;
+	animation: flash 0.1s infinite;
+}
+
+@keyframes flash{
+	0%{
+		box-shadow: 0 0 0 0 white;
+	}100%{
+		box-shadow: 0 0 0 5px rgba(0,0,0,0);
+	}
+}
+
+@-webkit-keyframes moveHorizontally {
+  0%   {left: 30%;}
+  25%  {left: 60%;}
+  75%  {left: 40%;}
+  100% {left: 30%;}
+}
+
+@keyframes moveHorizontally {
+  0%   {left: 30%;}
+  25%  {left: 60%;}
+  75%  {left: 40%;}
+  100% {left: 30%;}
+}
+
+.red1{
+	background-color:hsl(0,100%,50%);
+}
+
+.red2{
+	background-color:hsl(0,100%,70%);
+}
+
+.red3{
+	background-color:hsl(0,100%,90%);
+}
+
+ul.navbarL{
+	list-style-type: none;
+	margin: 	0;
+	padding: 0;
+	width: 10%;
+	height: 100%;
+	position: fixed;
+	overflow: auto;
+	background-color: rgba(255, 255, 0, 0.3);
+}
+
+ul.navbarL li{
+	margin: 5px;
+}
+
+ul.navbarL li:hover{
+	color: #33ffdd;
+	background-color: black;
+	animation: signal 1s 1;
+}
